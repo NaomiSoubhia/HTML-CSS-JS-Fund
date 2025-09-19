@@ -1,2 +1,2 @@
 # HTML-CSS-JS-Fund
-This is my HTML, CSS, &amp; JS Fund repository
+This is my HTML, CSS and JS Fund repository
