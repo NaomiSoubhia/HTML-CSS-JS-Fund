@@ -37,13 +37,7 @@
 	echo('<p>The Alert Settings you have chosen include the following notifications:</p>
 	<ul>');
 		// STEP 21: The checkboxes for the Alert Settings will be sent as an array (as there could be more than one option checked by the user - so we need to loop through each item with a FOREACH loop)
-<<<<<<< HEAD
 		
-=======
-		foreach($alert as $item){
-			echo('<li>'.$item.'</li>');
-		}
->>>>>>> c2a2168c678e36b52a7297672e5a6448ab5a9c9c
 
 
 	echo('</ul>');
@@ -53,8 +47,4 @@
             <p><small>©PayDude Inc. All rights reserved</small></p>
         </footer>
 	</body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> c2a2168c678e36b52a7297672e5a6448ab5a9c9c
