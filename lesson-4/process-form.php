@@ -16,7 +16,6 @@
     is in the correct format. Security checks must also be made before database queries are made */
 
 	// STEP 16: Set a variable to capture the first name from the submitted form, using the GET array and the fname value
-<<<<<<< HEAD
 	
 	// STEP 18: Set a variable to capture the last name from the submitted form, using the GET array and the lname value
 	
@@ -24,7 +23,6 @@
 	
 	// STEP 17: Output a friendly message to confirm that everything went well, including the $fname variable in a paragraph
 	
-=======
 	$fname = $_GET["fname"];
 
 	// STEP 18: Set a variable to capture the last name from the submitted form, using the GET array and the lname value
@@ -34,7 +32,6 @@
 	$alert = $_GET["alert"];
 	// STEP 17: Output a friendly message to confirm that everything went well, including the $fname variable in a paragraph
 	echo('<p>Thank you, '.$fname. ' ' .$lname.'!</p>');
->>>>>>> c2a2168c678e36b52a7297672e5a6448ab5a9c9c
 	// STEP 19: Update the above paragraph to now include the last name
 
 	echo('<p>The Alert Settings you have chosen include the following notifications:</p>
