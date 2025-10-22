@@ -10,37 +10,154 @@
 </head>
 
 <body>
+    <!-- Nav -->
     <header>
         <nav>
             <div class="logo">
                 <img src="images/pizza-slice.png" alt="Pizza slice">
             </div>
             <ul>
-                <li><a href="#flavors">Flavors</a></li>
-                <li><a href="#order">Order</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#topping">Toppings</a></li>
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Top container -->
         <div class="topDiv">
-        <h1 class="title"><strong>Nana's Pizzaria</strong></h1>
-        <img class="downArrow" src="images/down-arrow.png" alt="Down arrow">
+            <h1 class="title"><strong>Nana's Pizzaria</strong></h1>
+            <img class="downArrow" src="images/down-arrow.png" alt="Down arrow">
         </div>
 
-       
-        <div class="formDiv">
-            <h2 class="orderTitle">Order here</h2>
-            <form class="formPizza" id="edit_payment_info" action="process-form.php" method="get">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="">
-                 
-            </form>
-        </div>
+
+
+        <h2 class="orderTitle"><strong>Order here</strong></h2>
+        <form class="formPizza" id="edit_payment_info" action="process-form.php" method="get">
+            <div class="formDiv">
+                <fieldset id="pizza" class="pizzaGroup">
+                    <legend class="titleGroup"><strong>Pizza</strong></legend>
+
+                    <!-- Number of pizzas     -->
+                    <div>
+                        <label class="labelSize" for="numberPizza">Number of pizzas:</label>
+                        <input class="inputs" type="number" name="numberPizza" id="">
+                    </div>
+
+                    <!-- Size (number of slices) -->
+                    <label class="labelSize" for="size">Size:</label>
+                    <input class="optionTitle" type="radio" name="size" id="small" value="small" />
+                    <label class="options" for="small">Small</label>
+                    <input type="radio" name="size" id="medium" value="medium" />
+                    <label class="options" for="medium">Medium</label>
+                    <input type="radio" name="size" id="large" value="large" />
+                    <label class="options" for="large">Large</label>
+
+                    <!-- Shape (square or round) -->
+                    <div>
+                        <label class="labelShape" for="size">Shape:</label>
+                        <input class="shapeTitle" type="radio" name="shape" id="square" value="square" />
+                        <label class="options" for="square">Square</label>
+                        <input type="radio" name="shape" id="round" value="round" />
+                        <label class="options" for="round">Round</label>
+                    </div>
+
+
+
+
+                    <!-- Deep dish, thin crust or some other crust types -->
+                    <div >
+                        <label for="crust">Crust Types:</label>
+                        <select class="crustType" name="crust" id="crust">
+                            <option value="">-- Select crust type --</option>
+                            <option value="thin">Thin Crust</option>
+                            <option value="thick">Thick Crust</option>
+                            <option value="deep-dish">Deep Dish</option>
+                            <option value="pan">Pan Crust</option>
+                            <option value="cheese-crust">Cheese Crust</option>
+                            <option value="flatbread">Flatbread</option>
+                            <option value="focaccia">Focaccia Crust</option>
+                        </select>
+
+
+
+                    </div>
+
+                </fieldset>
+
+                <!-- Toppings -->
+                <fieldset id="topping" class="pizzaGroup">
+
+                    <legend class="titleGroup"><strong>Toppings</strong></legend>
+
+                    <input type="checkbox" name="topping[]" id="pepperoni" value="push" />
+                    <label class="options" for="pepperoni">Pepperoni</label>
+
+                    <input type="checkbox" name="topping[]" id="mushrooms" value="push" />
+                    <label class="options" for="mushrooms">Mushrooms</label>
+
+                    <input type="checkbox" name="topping[]" id="onions" value="push" />
+                    <label class="options" for="onions">Onions</label>
+
+                    <input type="checkbox" name="topping[]" id="bacon" value="push" />
+                    <label class="options" for="bacon">Bacon</label>
+
+                    <input type="checkbox" name="topping[]" id="olives" value="push" />
+                    <label class="options" for="olives">Olives</label>
+
+                    <input type="checkbox" name="topping[]" id="tomatoes" value="push" />
+                    <label class="options" for="tomatoes">Tomatoes</label>
+
+                    <input type="checkbox" name="topping[]" id="broccoli" value="push" />
+                    <label class="options" for="broccoli">Broccoli</label>
+
+                    <!-- Other informations -->
+                    <div class="addInfo">
+                        <label class="addInfo" for="infos">Additional information:</label>
+                        <textarea class="textArea" name="infos" id="infos" rows="5" cols="100"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <fieldset id="contact" class="pizzaGroup">
+                    <legend class="titleGroup"><strong>Personal informations</strong></legend>
+
+                    <div>
+                        <label class="labelSize" for="name">Name:</label>
+                        <input class="inputName" type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label class="labelSize" for="phone">Phone number:</label>
+                        <input class="inputs" type="number" name="phone" id="phone">
+                    </div>
+
+                    <!-- Take out, delivery, or eat-in g. And so on… -->
+
+                    <div>
+                        <label class="labelSize" for="orderType">Order Type:</label>
+                        <input class="optionTitle" type="radio" name="orderType" id="take" value="take" />
+                        <label class="options" for="take">Take Out</label>
+                        <input type="radio" name="orderType" id="delivery" value="delivery" />
+                        <label class="options" for="delivery">Delivery</label>
+                        <input type="radio" name="orderType" id="eat" value="eat" />
+                        <label class="options" for="eat">Eat In</label>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                 <button class="btn" type="reset">Reset</button> 
+                 <button class="btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
     </main>
     <footer>
-
+        <div class="background">
+            <p><small class="rigths">© Nana's Pizzaria Inc.</small></p>
+        </div>
     </footer>
 </body>
 
