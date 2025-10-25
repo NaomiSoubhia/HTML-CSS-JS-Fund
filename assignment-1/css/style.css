@@ -170,6 +170,7 @@ margin-bottom: 1em;
 
 .textArea{
     border: 1px solid #bc0101;
+    resize: none;
 }
 
 .inputName{

@@ -42,12 +42,12 @@
                     <!-- Number of pizzas     -->
                     <div>
                         <label class="labelSize" for="numberPizza">Number of pizzas:</label>
-                        <input class="inputs" type="number" name="numberPizza" id="">
+                        <input class="inputs" type="number" name="numberPizza" id="" required>
                     </div>
 
                     <!-- Size (number of slices) -->
                     <label class="labelSize" for="size">Size:</label>
-                    <input class="optionTitle" type="radio" name="size" id="small" value="small" />
+                    <input class="optionTitle" type="radio" name="size" id="small" value="small" required />
                     <label class="options" for="small">Small</label>
                     <input type="radio" name="size" id="medium" value="medium" />
                     <label class="options" for="medium">Medium</label>
@@ -57,7 +57,7 @@
                     <!-- Shape (square or round) -->
                     <div>
                         <label class="labelShape" for="size">Shape:</label>
-                        <input class="shapeTitle" type="radio" name="shape" id="square" value="square" />
+                        <input class="shapeTitle" type="radio" name="shape" id="square" value="square" required/>
                         <label class="options" for="square">Square</label>
                         <input type="radio" name="shape" id="round" value="round" />
                         <label class="options" for="round">Round</label>
@@ -69,7 +69,7 @@
                     <!-- Deep dish, thin crust or some other crust types -->
                     <div >
                         <label for="crust">Crust Types:</label>
-                        <select class="crustType" name="crust" id="crust">
+                        <select class="crustType" name="crust" id="crust" required>
                             <option value="">-- Select crust type --</option>
                             <option value="thin">Thin Crust</option>
                             <option value="thick">Thick Crust</option>
@@ -125,19 +125,19 @@
 
                     <div>
                         <label class="labelSize" for="name">Name:</label>
-                        <input class="inputName" type="text" name="name" id="name">
+                        <input class="inputName" type="text" name="name" id="name" required>
                     </div>
 
                     <div>
                         <label class="labelSize" for="phone">Phone number:</label>
-                        <input class="inputs" type="number" name="phone" id="phone">
+                        <input class="inputs" type="number" name="phone" id="phone" required>
                     </div>
 
                     <!-- Take out, delivery, or eat-in g. And so on… -->
 
                     <div>
                         <label class="labelSize" for="orderType">Order Type:</label>
-                        <input class="optionTitle" type="radio" name="orderType" id="take" value="take" />
+                        <input class="optionTitle" type="radio" name="orderType" id="take" value="take" required/>
                         <label class="options" for="take">Take Out</label>
                         <input type="radio" name="orderType" id="delivery" value="delivery" />
                         <label class="options" for="delivery">Delivery</label>
