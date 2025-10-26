@@ -23,23 +23,12 @@
         $shape = $_GET["shape"];
         $crust = $_GET["crust"];
         $orderType = $_GET["orderType"];
-        $toppings = $_GET["topping"] ?? [];
         $infos = $_GET["infos"];
 
         //show confirmation
         echo "<p>Thank you, <strong>$name</strong>! Your order has been received.</p>";
         echo "<p>You ordered <strong>$numberPizza</strong> $size $shape pizza(s) with <strong>$crust</strong> crust for <strong>$orderType</strong>.</p>";
 
-        echo "<p><strong>Toppings:</strong></p>";
-        if (!empty($toppings)) {
-            echo "<ul>";
-            foreach ($toppings as $topping) {
-                echo "<li>$topping</li>";
-            }
-            echo "</ul>";
-        } else {
-            echo "<p>No extra toppings selected.</p>";
-        }
 
         if (!empty(trim($infos))) {
             echo "<p><strong>Additional info:</strong> $infos</p>";
