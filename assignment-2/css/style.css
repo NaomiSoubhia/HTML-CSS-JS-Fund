@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Pirata+One&family=Stack+Sans+Text:wght@200..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+.imagePoster{
+width: 100%;
+height: 326vh;
+position: relative;   
+}
+
+.top{
+    margin-top: 2.2em;
+    font-family: "Texturina", serif;
+    font-size: 61px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #F5E0CC;
+    position: absolute;    
+    color: #493325;    
+  top: 0%;                 
+  left: 22%;                    
+}
+
+.text{
+ font-family: "Stack Sans Text", sans-serif;
+ font-weight: 200;
+ position: absolute;
+ top: 36%;    
+ left: 68%; 
+ letter-spacing: 0;
+ color: #493325;           
+ background-color: #F5E0CC;
+ transform: translateX(-26%);
+ font-size: 32px;
+ padding: 1em;
+ text-align: center;
+}
+
+.disney{    
+   font-family: "Englebert", cursive;
+ font-weight: 400;
+ position: absolute;
+ color: #000;           
+ background-color: #F5E0CC;
+ font-size: 100px;
+ top: 152%;    
+ right: 45%; 
+ text-align: center;
+}
