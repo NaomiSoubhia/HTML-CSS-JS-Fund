@@ -1,8 +1,8 @@
+/*Google Fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Englebert&family=Gantari:ital,wght@0,100..900;1,100..900&family=IM+Fell+French+Canon:ital@0;1&family=New+Amsterdam&family=Noto+Sans:ital,wdth,wght@0,78.6,160;1,78.6,160&family=Pirata+One&family=Playball&family=Stack+Sans+Text:wght@200..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
 
 body{
   background-color: #FFF4E0;
-  
 }
 
 .imagePoster{
@@ -395,9 +395,10 @@ text-decoration: none;
 font-family: "Barlow Condensed", sans-serif;
 border-radius: 20px;
 border: 2px solid #6F3D60 ;
-transition: all 0.8s ease;
+transition: all 0.8s ease; /*hover time*/
 }
 
+/* Button hover effect */
 .btnTomatoes:hover{
 background-color: #6F3D60;
 color: #FCB400;
