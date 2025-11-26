@@ -8,7 +8,7 @@ body{
    padding: 0;
    background-color:#F2F2F2 ;
    font-family: "Spectral", serif;
-  position: relative;
+  position: absolute;
 }
 
 /* Site top */
@@ -38,7 +38,6 @@ position: relative;
     position: absolute; 
     top: 39%;
     left: 89%;
-    transform: rotate(0deg);
     
 }
 .flower3{
@@ -131,6 +130,7 @@ letter-spacing: -1px;
 }
 .logo{
     width: 18%;
+    
 }
 
 .logo img{
@@ -151,7 +151,7 @@ li:hover{
 }
 
 
-/* Main  */
+/* Main Gallery */
 .gallery{
     width: 100%;
     display: flex;
@@ -161,15 +161,15 @@ li:hover{
 
 .gallery figure img{
  width: 80%;
- background-color: #EBC283;
+ background-color: #F2F2F2;
 padding:10%;
 }
 
 .polaroidImage{
-    background-color: #fff;
-    padding-top: 0.5em;
-    width: 25%;
-    padding-bottom: 2em;
+    background-color: #740220;
+    color: #fff;
+    padding-top: 0.3em;
+    width: 24%;
    margin: 2%;
    margin-top: 0%;
 }
@@ -180,4 +180,255 @@ padding:10%;
     font-weight: 100;
     text-align: center;
     font-size: 3em;
+}
+
+.gallery figcaption{
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.rotate{
+    transform: rotate(2deg);
+}
+
+.rotateLeft{
+     transform: rotate(-2deg);
+}
+
+
+.flower6{
+    width: 8em;
+    position: absolute; 
+    top: 62em;
+    left: 87%; 
+    z-index: -1; 
+    transform: rotate(20deg);
+}
+
+.flower7{
+    width: 7em;
+    position: absolute; 
+    top: 68em;
+    left: 86%; 
+    transform: rotate(40deg);
+}
+
+.flower8{
+    width: 5em;
+    position: absolute; 
+    top: 48em;
+    z-index: -1;
+    left: 31%;
+    transform: rotate(15deg);
+}
+
+/* Why buy a polaroid? */
+.why figure{
+    width: 100%;
+}
+
+.why figure img{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.flower9{
+    width: 9em;
+    position: absolute; 
+    top: 101em;
+    z-index: 0;
+    left: 10%;
+    transform: rotate(40deg);
+}
+
+.side{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.sideRight p{
+    width: 100%;
+    display: flex;
+}
+
+.sideRight{
+ margin-top: auto;   
+ width: 40%;  
+ margin-bottom: auto;
+}
+
+.sideRight a img{
+  width: 2rem;  
+  transform: rotate(180deg);
+  display: flex;
+
+  background-color: #0A515B;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  border-radius: 20px;
+}
+
+
+.why{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flower10{
+     width: 7em;
+    position: absolute; 
+    top: 85rem;
+    left: 42%;
+}
+
+/* Details */
+
+
+
+.line{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.flowerDivs{
+display: flex;
+width: 100%;
+margin-left: auto;
+text-align: left;
+margin-top: 1rem;
+}
+.flowerDivs img{
+    width: 15%;
+    padding-right: 1rem;
+    height: auto;
+}
+
+.sideCamera{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.sideCamera img{
+    width: 100%;
+}
+
+
+footer{
+    background-color: #025158;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* About us Page */
+
+.topOther{
+background-color: #F2F2F2;
+height: 50vh;
+width: 100%;
+margin: 0;
+padding: 0;
+padding-top: 0;
+overflow: hidden;
+position: relative;
+ z-index: 2;
+}
+
+.topOther .flower{
+    width: 18em; 
+    position: absolute; 
+    top: 60%;
+    left: 75%;
+    transform: rotate(-32deg);  
+    z-index: 1;
+    
+}
+
+ 
+.topOther  .flower3{
+    width: 15em;
+    position: absolute; 
+    top: 30%;
+    left: 68%;
+    
+    z-index: -1;
+    
+}
+
+
+.topOther .flower5{
+    width: 22em;
+    position: absolute; 
+    top: 10%;
+    left: 80%;
+    z-index: -1;
+} 
+
+.titleAbout{
+font-family: "Rouge Script", cursive;
+font-size: 8em;
+font-weight: 500;
+top: 40%;   
+position: absolute;
+left:10%;
+}
+
+
+
+.company{
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+i{
+    font-weight: bold;
+}
+
+/* About me */
+.aboutCreator{
+    width: 90%;
+    display: flex;
+   position: relative;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.imgCreator{
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    padding-right: 5rem;
+}
+
+.imgCreator img{
+    width: 50%;
+
+}
+
+.textCreator{
+    width: 35%;
+}
+
+.flower11{
+    width: 5em;
+    position: absolute; 
+    top: 34rem;
+    z-index: -1;
+    left: 25%;
+    transform: rotate(-30deg);  
 }
