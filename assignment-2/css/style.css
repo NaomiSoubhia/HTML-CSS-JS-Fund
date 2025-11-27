@@ -3,145 +3,162 @@
 /*Google Fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Englebert&family=Gantari:ital,wght@0,100..900;1,100..900&family=IM+Fell+French+Canon:ital@0;1&family=New+Amsterdam&family=Noto+Sans:ital,wdth,wght@0,78.6,160;1,78.6,160&family=Pirata+One&family=Playball&family=Stack+Sans+Text:wght@200..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
 
-body{
+body {
   background-color: #FFF4E0;
 }
 
-.imagePoster{
-width: 100%;
-height: 326vh;
-position: relative;   
+.imagePoster {
+  width: 100%;
+  /* 326% of viewport height*/
+  height: 326vh;
+  position: relative;
 }
 
-.imagePoster:hover{
- transform: scale(1.05);
+.imagePoster:hover {
+  /* zooms the poster slightly on hover */
+  transform: scale(1.05);
+  /* ensures the scaled element sits above others */
   z-index: 1;
- padding: 0;
- margin: 0;
- width: 98%;
-height: 320vh;
+  padding: 0;
+  margin: 0;
+  width: 98%;
+  height: 320vh;
 }
 
-.top{
-    margin-top: 2.4em;
-    font-family: "Texturina", serif;
-    font-size: 61px;
-    font-weight: 800;
-    text-align: center;
-    position: absolute;    
-    color: #493325; 
-    
-  top: 0%;                 
-  left: 22%;                    
+/* top title */
+.top {
+  margin-top: 2.4em;
+  font-family: "Texturina", serif;
+  font-size: 61px;
+  font-weight: 800;
+  text-align: center;
+  position: absolute;
+  color: #493325;
+
+  top: 0%;
+  left: 22%;
 }
 
-.text{
- font-family: "Stack Sans Text", sans-serif;
- font-weight: 100;
- position: absolute;
- top: 36%;    
- left: 68%; 
- letter-spacing: 0;
- color: #493325;           
- transform: translateX(-26%);
- font-size: 31px;
- padding: 1em;
- text-align: center;
+
+/* description */
+.text {
+  font-family: "Stack Sans Text", sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 36%;
+  /* positioned 36% down the height of the poster */
+  left: 68%;
+  letter-spacing: 0;
+  color: #493325;
+  transform: translateX(-26%);
+  font-size: 31px;
+  padding: 1em;
+  text-align: center;
 }
 
-.disney{    
-   font-family: "Englebert", cursive;
- font-weight: 400;
- position: absolute;
- color: #000;           
- font-size: 100px;
- top: 152%;    
- right: 45%; 
- text-align: center;
+
+/* main disney title */
+.disney {
+  font-family: "Englebert", cursive;
+  font-weight: 400;
+  position: absolute;
+  color: #000;
+  font-size: 100px;
+  top: 152%;
+  right: 45%;
+  /* text centralized */
+  text-align: center;
 }
 
-.sub{
-font-family: "Noto Sans", sans-serif;
-font-weight: 500;
- position: absolute;
- color: #493325;           
- font-size: 25px;
- top: 180%;    
- left: 26%; 
- padding-right: 1em;
- padding-left: 1em;
- text-align: center;
+/* subheading */
+.sub {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  color: #493325;
+  font-size: 25px;
+  top: 180%;
+  left: 26%;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
 }
 
-.the{
+/* SWORD IN THE STONE */
+
+.the {
   color: #5E2E62;
   position: absolute;
   font-size: 70px;
- top: 182%;    
- padding-inline: 0.3em;
- padding-top: 1em;
- padding-bottom: 1em;
- font-family: "Pirata One", system-ui;
- left: 15%; 
- text-align: center;
+  top: 182%;
+  padding-inline: 0.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Pirata One", system-ui;
+  left: 15%;
+  text-align: center;
 }
 
-.the2{
+.the2 {
   color: #5E2E62;
   position: absolute;
- padding-right: 10em;
- padding-top: 1.1em;
+  padding-right: 10em;
+  padding-top: 1.1em;
   font-size: 52px;
- top: 211%;    
-letter-spacing: 2px;
- font-family: "Pirata One", system-ui;
- left: 24%; 
- text-align: center;
+  top: 211%;
+  letter-spacing: 2px;
+  font-family: "Pirata One", system-ui;
+  left: 24%;
+  text-align: center;
 }
 
 
-.sword{
-    color: #FCB400;
-    -webkit-text-stroke-width: 1px; /* Sets the stroke width */
-  -webkit-text-stroke-color:#6F3D60; /* Sets the stroke color */
+.sword {
+  color: #FCB400;
+  -webkit-text-stroke-width: 1px;
+  /* sets the stroke width */
+  -webkit-text-stroke-color: #6F3D60;
+  /* sets the stroke color */
   position: absolute;
   font-size: 200px;
- top: 160%;    
- padding-inline: 0.1em;
- font-family: "Pirata One", system-ui;
- left: 22%; 
- padding-bottom: 0.5em;
- text-align: center;
+  top: 160%;
+  padding-inline: 0.1em;
+  font-family: "Pirata One", system-ui;
+  left: 22%;
+  padding-bottom: 0.5em;
+  text-align: center;
   letter-spacing: 2px;
 }
 
-.in{
- color: #5E2E62;
- position: absolute;
- font-size: 60px;
- top: 210%;    
- padding-inline: 0.3em;
- font-family: "Pirata One", system-ui;
- left: 23%; 
- text-align: center;
+.in {
+  color: #5E2E62;
+  position: absolute;
+  font-size: 60px;
+  top: 210%;
+  padding-inline: 0.3em;
+  font-family: "Pirata One", system-ui;
+  left: 23%;
+  text-align: center;
 }
 
-.stone{
-    color: #FCB400;
-    -webkit-text-stroke-width: 1px; 
-  -webkit-text-stroke-color:#6F3D60; 
+.stone {
+  color: #FCB400;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6F3D60;
   position: absolute;
 
   font-size: 190px;
- top: 185%;    
-padding-right: 0.4em;
- font-family: "Pirata One", system-ui;
- left: 30%; 
- letter-spacing: 2px;
- text-align: center;
- 
+  top: 185%;
+  padding-right: 0.4em;
+  font-family: "Pirata One", system-ui;
+  left: 30%;
+  letter-spacing: 2px;
+  text-align: center;
+
 }
 
+
+/* sparkle overlay effect using a gif */
 .sword::after,
 .stone::after,
 .the::after,
@@ -161,231 +178,238 @@ padding-right: 0.4em;
 
 
 
-
-.tech{
-    margin-top: 2.4em;
-    font-family: "Vend Sans", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    position: absolute;    
-    color: #493325; 
-   top: 216%;   
+/* technical details */
+.tech {
+  margin-top: 2.4em;
+  font-family: "Vend Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  color: #493325;
+  top: 216%;
   padding-top: 2em;
-  letter-spacing: 2px;              
-  left: 28%;   
+  letter-spacing: 2px;
+  left: 28%;
 }
 
-.r{
+
+/* rating text */
+.r {
   font-family: "Noto Sans", sans-serif;
-font-weight: 500;
- position: absolute;
- color: #493325;          
- font-size: 20px;
- top: 240%;    
- left: 46%; 
- padding-inline: 0.5em;
- text-align: center;
+  font-weight: 500;
+  position: absolute;
+  color: #493325;
+  font-size: 20px;
+  top: 240%;
+  left: 46%;
+  padding-inline: 0.5em;
+  text-align: center;
 }
 
-.story{
-font-family: "Barlow Condensed", sans-serif;
-font-weight: 200;
- position: absolute;
- color: #493325;           
- font-size: 27px;
- top: 304%;    
- left: 26%; 
- text-align: center;
-}
-
-.dot{
-font-family: "Barlow Condensed", sans-serif;
-font-weight: 200;
- position: absolute;
- color: #493325;           
- font-size: 38px;
- top: 300%;    
- left: 32%; 
- padding-inline: 2em;
- text-align: center;
-}
-.dot2{
-font-family: "Barlow Condensed", sans-serif;
-font-weight: 200;
- position: absolute;
- color: #543C27;          
- font-size: 38px;
- top: 300%;
- padding-left: 1em;    
- left: 54.5%; 
- 
-}
-.book{
-font-family: "Barlow Condensed", sans-serif;
-font-weight: 200;
- position: absolute;
- color: #543C27;          
- font-size: 27px;
- top: 304%;    
- left: 38%; 
- text-align: center;
-}
-
-.inc{
+.story {
   font-family: "Barlow Condensed", sans-serif;
-font-weight: 400;
- position: absolute;
- color: #8d6d56;          
- font-size: 18px;
- top: 304.2%;    
- left: 58.2%;
- padding-right: 0.7em;
- padding-left: 0.5em; 
- text-align: center;
+  font-weight: 200;
+  position: absolute;
+  color: #493325;
+  font-size: 27px;
+  top: 304%;
+  left: 26%;
+  text-align: center;
 }
 
-.productions{
+.dot {
   font-family: "Barlow Condensed", sans-serif;
-font-weight: 400;
- position: absolute;
- color: #8d6d56;          
- font-size: 18px;
- top: 307.2%;    
- left: 60.4%;
- padding-right: 1em;
- padding-left: 0.5em; 
- text-align: center;
+  font-weight: 200;
+  position: absolute;
+  color: #493325;
+  font-size: 38px;
+  top: 300%;
+  left: 32%;
+  padding-inline: 2em;
+  text-align: center;
 }
 
-.logo{
-   font-weight: 400;
- position: absolute;
- color: #503E2F;          
- font-size: 16px;
- top: 305.2%;    
- left: 84%;
- padding-right: 1em;
- padding-left: 0.5em; 
- text-align: center;
- text-decoration: none;
- font-family: "New Amsterdam", sans-serif;
-}
-.ages{
+.dot2 {
   font-family: "Barlow Condensed", sans-serif;
- position: absolute;
- color: #8d6d56;          
- font-size: 11px;
- top: 308.4%;    
- left: 83.8%;
- font-weight: 400;
- padding-left: 0.5em; 
- text-align: center;
- font-family: "Gantari", sans-serif;
+  font-weight: 200;
+  position: absolute;
+  color: #543C27;
+  font-size: 38px;
+  top: 300%;
+  padding-left: 1em;
+  left: 54.5%;
+
 }
 
-.footer{
+.book {
   font-family: "Barlow Condensed", sans-serif;
- position: absolute;
- color: #8d6d56;          
- font-size: 13px;
- top: 315.4%;    
- left: 78.2%;
- letter-spacing: 1px;
- font-weight: 400;
- padding-right: 0.5em; 
- padding-left: 0.5em; 
- text-align: center;
- font-family: "Gantari", sans-serif;
+  font-weight: 200;
+  position: absolute;
+  color: #543C27;
+  font-size: 27px;
+  top: 304%;
+  left: 38%;
+  text-align: center;
 }
 
-.page{
+.inc {
   font-family: "Barlow Condensed", sans-serif;
- position: absolute;
- color: #8d6d56;          
- font-size: 13px;
- top: 315.5%;    
- left: 93%;
- font-style: italic;
- letter-spacing: 1px;
- font-weight: 500;
- padding-right: 0.5em; 
- padding-left: 0.5em; 
- text-align: center;
+  font-weight: 400;
+  position: absolute;
+  color: #8d6d56;
+  font-size: 18px;
+  top: 304.2%;
+  left: 58.2%;
+  padding-right: 0.7em;
+  padding-left: 0.5em;
+  text-align: center;
+}
+
+.productions {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  color: #8d6d56;
+  font-size: 18px;
+  top: 307.2%;
+  left: 60.4%;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  text-align: center;
+}
+
+.logo {
+  font-weight: 400;
+  position: absolute;
+  color: #503E2F;
+  font-size: 16px;
+  top: 305.2%;
+  left: 84%;
+  padding-right: 1em;
+  padding-left: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "New Amsterdam", sans-serif;
+}
+
+.ages {
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  color: #8d6d56;
+  font-size: 11px;
+  top: 308.4%;
+  left: 83.8%;
+  font-weight: 400;
+  padding-left: 0.5em;
+  text-align: center;
+  font-family: "Gantari", sans-serif;
+}
+
+.footer {
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  color: #8d6d56;
+  font-size: 13px;
+  top: 315.4%;
+  left: 78.2%;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  text-align: center;
+  font-family: "Gantari", sans-serif;
+}
+
+.page {
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  color: #8d6d56;
+  font-size: 13px;
+  top: 315.5%;
+  left: 93%;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  text-align: center;
 
 }
 
-.g{
+.g {
   font-family: "IM Fell French Canon", serif;
- position: absolute;
- border: 1px solid black;
- color: #000;          
- font-style: normal;
- font-size: 27px;
- top: 303.5%;    
- left: 80.5%;
- font-weight: 600;
-padding-right: 0.1em; 
- padding-left: 0.15em;
- text-align: center;
+  position: absolute;
+  border: 1px solid black;
+  color: #000;
+  font-style: normal;
+  font-size: 27px;
+  top: 303.5%;
+  left: 80.5%;
+  font-weight: 600;
+  padding-right: 0.1em;
+  padding-left: 0.15em;
+  text-align: center;
 
 
 }
 
-.title{
+.title {
   color: #FCB400;
-    -webkit-text-stroke-width: 1px; 
-  -webkit-text-stroke-color:#6F3D60; 
-  font-size: 150px;  
- font-family: "Pirata One", system-ui;
- letter-spacing: 2px;
- margin-bottom: 0.1em;
- 
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-text-stroke */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6F3D60;
+  font-size: 150px;
+  font-family: "Pirata One", system-ui;
+  letter-spacing: 2px;
+  margin-bottom: 0.1em;
+
 }
 
-.feedback{
+.feedback {
   align-items: center;
   text-align: center;
   padding-bottom: 5em;
   border: 20px solid #110C09;
 }
 
-.imageGif{
+/* second image git */
+.imageGif {
   margin-top: 0;
   border-radius: 20px;
 }
 
-.figureArthur{
+.figureArthur {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
 
-figcaption{
-font-family: "Noto Sans", sans-serif;
-font-weight: 500;
- color: #493325;           
- font-size: 25px;
- text-align: center;
- margin-bottom: 0.2em;
+figcaption {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: #493325;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0.2em;
 }
 
-.btnTomatoes{
+.btnTomatoes {
   background-color: #FCB400;
   color: #6F3D60;
   font-size: 17px;
-padding: 1em;
-text-decoration: none;
-font-family: "Barlow Condensed", sans-serif;
-border-radius: 20px;
-border: 2px solid #6F3D60 ;
-transition: all 0.8s ease; /*hover time*/
+  padding: 1em;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  border-radius: 20px;
+  border: 2px solid #6F3D60;
+  transition: all 0.8s ease;
+  /*hover time*/
 }
 
-/* Button hover effect */
-.btnTomatoes:hover{
-background-color: #6F3D60;
-color: #FCB400;
+/*button hover effect */
+.btnTomatoes:hover {
+  background-color: #6F3D60;
+  color: #FCB400;
 
 }
-
