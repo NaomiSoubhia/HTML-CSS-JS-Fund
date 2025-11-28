@@ -150,8 +150,8 @@ letter-spacing: -1px;
 width: 75%;    
 }
 
-.flower10,.flower9,.flower8,.flower7,.flower6,.flower11{
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+.flower10,.flower9,.flower8,.flower7,.flower6,.flower11, .flower12{
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
 
@@ -505,6 +505,11 @@ background-color: transparent;
     height: auto;
 }
 
+
+.space{
+    margin-top: 5rem;
+}
+
 .textAvaliation{
     width: 40%;
     background-color: #efefef;
@@ -512,7 +517,12 @@ background-color: transparent;
     border: solid 1px #025158;
     display: block;
     padding: 1.2%;
+    background-color: #fff;    
     border-radius: 20px;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -523,12 +533,16 @@ background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
+
 }
 
 .form fieldset{
     border-radius: 10px;
-    width: 50%;
+    width: 45%;
     border: 1px solid #025158;
+    padding-bottom: 2rem;
+    
 }
 
 .labelPolaroid{
@@ -585,9 +599,7 @@ background-color: transparent;
 .divType{
     display: flex;
     align-items: center;
-
-    width: 28%;
-    padding-left: 1%;
+    width: 30%;
     height: 4rem;
 
 }
@@ -600,12 +612,45 @@ background-color: transparent;
 .divType2{
     display: flex;
     align-items: center;
-    width: 14%;
+    width: 17%;
     height: 4rem;
+    padding-right: 1%;
+}
+
+.divType3{
+      display: flex;
+    align-items: center;
+    width: 13%;
+    height: 4rem;  
 }
 
 .textArea{
     border-radius: 10px;
     width: 62%;
     resize: none;
+}
+
+.btnForm img{
+    transform: rotate(180deg);    
+    border: none;
+    width: 1.8rem;
+}
+
+.btnForm{
+    border: none;
+    background-color: #025158;
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+}
+
+.flower12{
+    width: 7em;
+    position: absolute; 
+    top: 33rem;
+    left: 28%;
+    z-index: -1;
 }
