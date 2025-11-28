@@ -31,6 +31,7 @@ position: relative;
     transform: rotate(-35deg);  
     z-index: 1;
     
+    
 }
 
 .flower2{
@@ -78,8 +79,12 @@ font-weight: 500;
     position: absolute; 
     top:40%;
     right: 68%;    
+    
 }
 
+header img{
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
 
 
 .top h2{
@@ -136,6 +141,7 @@ letter-spacing: -1px;
 .logo img{
     margin-left: 15%;
     width: 20%;
+    filter: none;
 
 }
 
@@ -144,6 +150,9 @@ letter-spacing: -1px;
 width: 75%;    
 }
 
+.flower10,.flower9,.flower8,.flower7,.flower6,.flower11{
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
 
 
 li:hover{
