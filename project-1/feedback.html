@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-
-    <title>Document</title>
+    <title>Feedback</title>
 </head>
 
 <body>
     <header class="topOther">
 
-        <!-- Menu  -->
+        <!-- Menu -->
         <nav class="menu">
             <ul>
                 <div class="logo">
-                    <img src="images/logo.png" alt="">
+                    <img src="images/logo.png" alt="Nana's Inc. Logo">
                 </div>
                 <div class="options">
                     <li><a href="index.html">HOME</a></li>
@@ -27,112 +26,132 @@
                     <li><a href="support.html">SUPPORT</a></li>
                 </div>
             </ul>
-
         </nav>
 
-        <!-- Top  -->
+        <!-- Top title & decorative images -->
         <h1 class="titleAbout"><em>Feedback</em></h1>
-        <img src="images/flower2.png" class="flower" alt="">
-        <img src="images/flower3.png" class="flower2" alt="">
-        <img src="images/flower4.png" class="flower3" alt="">
-        <img src="images/flower.png" class="flower5" alt="">
+        <img src="images/flower2.png" class="flower" alt="Decorative flower">
+        <img src="images/flower3.png" class="flower2" alt="Decorative flower">
+        <img src="images/flower4.png" class="flower3" alt="Decorative flower">
+        <img src="images/flower.png" class="flower5" alt="Decorative flower">
 
     </header>
 
     <main>
+
+        <!-- Description text -->
         <div class="company">
             <p>We love being a part of your special moments! Here, our community shares their experiences with Naomi’s
-                INK —
-                from the excitement of capturing their first instant photo to decorating their spaces with memories that
-                feel
-                alive.</p>
+                INK — from the excitement of capturing their first instant photo to decorating their spaces with memories
+                that feel alive.</p>
         </div>
 
         <h2 class="subtitle space">What our customers say?</h2>
 
+        <!-- Opinions carousel -->
         <div class="opnions">
 
+            <!-- Previous feedback button -->
             <div class="btnBack">
-                <button id="prevBtn" type="button"><img src="images/back.png" alt=""></button>
+                <button id="prevBtn" type="button"><img src="images/back.png" alt="Previous feedback"></button>
             </div>
 
+            <!-- Feedback content -->
             <div class="textAvaliation">
+
                 <div class="starsLine">
-                    <img src="images/star.png" alt="">
-                    <img src="images/star.png" alt="">
-                    <img src="images/star.png" alt="">
-                    <img src="images/star.png" alt="">
-                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="Rating star">
+                    <img src="images/star.png" alt="Rating star">
+                    <img src="images/star.png" alt="Rating star">
+                    <img src="images/star.png" alt="Rating star">
+                    <img src="images/star.png" alt="Rating star">
                 </div>
 
                 <h3></h3>
-                <p> <em>“I love how simple and nostalgic it feels to capture memories instantly. Naomi’s INK brought
-                        back the joy of printing my favorite moments!”</em> <i>— Sarah L.</i></a></p>
+                <p><em>“I love how simple and nostalgic it feels to capture memories instantly. Naomi’s INK brought back the joy
+                        of printing my favorite moments!”</em> <i>— Sarah L.</i></p>
             </div>
 
-            <div class="btnBack" >
-                <button id="nextBtn" type="button"><img class="btnRotate" src="images/back.png" alt=""></button>
+            <!-- Next feedback button -->
+            <div class="btnBack">
+                <button id="nextBtn" type="button">
+                    <img class="btnRotate" src="images/back.png" alt="Next feedback">
+                </button>
             </div>
 
         </div>
 
-        <img class="flower12" src="images/flower11.png" alt="">
+        <!-- Decorative flower -->
+        <img class="flower12" src="images/flower11.png" alt="Decorative flower illustration">
 
+        <!-- Opinion Form -->
         <div class="yourOpn">
-            <form class="form" id="" action="process-form.php" method="get">
+            <form class="form" action="process-form.php" method="get">
                 <fieldset>
-                    <legend class="subtitle"><strong>Share your opnion!</strong></legend>
+                    <legend class="subtitle"><strong>Share your opinion!</strong></legend>
 
-                    <!-- Contact Infos   -->
+                    <!-- Contact info -->
                     <div>
                         <label class="labelPolaroid" for="name">Name:</label>
-                        <input class="inputs" type="text" name="name" id="" required>
+                        <input class="inputs" type="text" name="name" id="name" required>
                     </div>
+
                     <div>
                         <label class="labelPolaroid" for="mail">E-mail:</label>
-                        <input class="inputs" type="text" name="mail" id="" required>
+                        <input class="inputs" type="email" name="mail" id="mail" required>
                     </div>
 
-                    <!-- About Polaroid -->
-
+                    <!-- Camera model selection -->
                     <div class="typePolaroid">
-                    <label class="labelType" for="polaroid">Your polaroid:</label>
-                    <div class="optionPolaroid">
-                    <div class="divType">
-                    <input class="optionTitle" type="radio" name="polaroid" id="SLR670" value="SLR670-S" required />
-                    <label class="options" for="SLR670-S">SLR670-S Sophie</label>
-                    </div>
-                    <div class="divType2">
-                    <input type="radio" name="polaroid" id="SLR680" value="SLR680" />
-                    <label class="options" for="SLR680">SLR680</label>
-                    </div>
-                    <div class="divType">
-                    <input type="radio" name="polaroid" id="typeI" value="typeI" />
-                    <label class="options" for="typeI">SLR670 (Type i)</label>
-                    </div>
-                    <div class="divType3">
-                    <input type="radio" name="polaroid" id="RF70" value="RF70" />
-                    <label class="options" for="RF70">RF70</label>
-                    </div>
-                    </div>
+                        <label class="labelType" for="polaroid">Your polaroid:</label>
+                        <div class="optionPolaroid">
+
+                            <div class="divType">
+                                <input class="optionTitle" type="radio" name="polaroid" id="SLR670" value="SLR670-S" required>
+                                <label class="options" for="SLR670">SLR670-S Sophie</label>
+                            </div>
+
+                            <div class="divType2">
+                                <input type="radio" name="polaroid" id="SLR680" value="SLR680">
+                                <label class="options" for="SLR680">SLR680</label>
+                            </div>
+
+                            <div class="divType">
+                                <input type="radio" name="polaroid" id="typeI" value="typeI">
+                                <label class="options" for="typeI">SLR670 (Type i)</label>
+                            </div>
+
+                            <div class="divType3">
+                                <input type="radio" name="polaroid" id="RF70" value="RF70">
+                                <label class="options" for="RF70">RF70</label>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <!-- Your comment -->
+                    <!-- Comment area -->
                     <div class="comment">
                         <label class="commentTitle" for="commentText">Your comment:</label>
-                        <textarea class="textArea" name="commentText" id="commentText" rows="5" cols="100"></textarea>
+                        <textarea class="textArea" name="commentText" id="commentText" rows="5" cols="100" placeholder="Tell us what you think!"></textarea>
                     </div>
 
-                    <button class="btnForm" type="submit"><img src="images/arrow.png" alt=""></button>
+                    <!-- Submit button -->
+                    <button class="btnForm" type="submit">
+                        <img src="images/arrow.png" alt="Submit feedback">
+                    </button>
+
                 </fieldset>
             </form>
         </div>
 
     </main>
+
+    <!-- Footer -->
     <footer>
         <small>© Nana's Inc.</small>
     </footer>
-        <script src="script.js" ></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

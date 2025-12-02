@@ -1,216 +1,214 @@
 @charset "utf-8";
+
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/*GLOBAL CONFIGURATION*/
 body{
+   width: 100%;      /* Ensures full page width */
+   margin: 0;        /* Remove default browser margin */
+   height: 100%;
+   padding: 0;       /* Remove default browser padding */
+   background-color:#F2F2F2; /* Page background */
+   font-family: "Spectral", serif; /* Default site font */
+   position: absolute;
+}
+
+/*HOME TOP SECTION (HERO AREA)*/
+.top{
+   background-color: #F2F2F2;
+   height: 100vh;        /* Full viewport height */
    width: 100%;
    margin: 0;
-   height: 100%;
    padding: 0;
-   background-color:#F2F2F2 ;
-   font-family: "Spectral", serif;
-  position: absolute;
+   position: relative;    /* Enables absolute elements */
+   overflow: hidden;      /* Avoid scroll due to decorations */
 }
 
-/* Site top */
-.top{
-background-color: #F2F2F2;
-height: 100vh;
-width: 100%;
-margin: 0;
-padding: 0;
-padding-top: 0;
-position: relative;
- overflow: hidden; /* Hide */
-}
-
+/* Decorative flowers - positioned around the hero area */
 .flower{
-    width: 18em; 
-    position: absolute; 
+    width: 18em;
+    position: absolute;
     top: 60%;
     left: 85%;
-    transform: rotate(-35deg);  
+    transform: rotate(-35deg);
     z-index: 1;
-    
-    
 }
 
 .flower2{
     width: 15em;
-    position: absolute; 
+    position: absolute;
     top: 39%;
     left: 89%;
-    
 }
+
 .flower3{
     width: 15em;
-    position: absolute; 
+    position: absolute;
     top: 60%;
     left: 80%;
     transform: rotate(-30deg);
-    
 }
+
 .flower4{
     width: 15em;
-    position: absolute; 
+    position: absolute;
     top: 78%;
     left: 70%;
-    
 }
+
 .flower5{
     width: 22em;
-    position: absolute; 
+    position: absolute;
     top: 78%;
     left: 80%;
     z-index: 2;
 }
 
+/* Main big title on homepage */
 h1{
-font-family: "Rouge Script", cursive;
-font-size: 9em;
-position: absolute; 
-top: 25%;
-left: 38%;
-justify-content: center;
-font-weight: 500;
+   font-family: "Rouge Script", cursive;
+   font-size: 9em;
+   position: absolute;
+   top: 25%;
+   left: 38%;
+   font-weight: 500;
 }
 
+/* Polaroid image in the hero section */
 .polaroid{
-    width: 35em;
-    position: absolute; 
-    top:40%;
-    right: 68%;    
-    
+   width: 35em;
+   position: absolute;
+   top: 40%;
+   right: 68%;
 }
 
+/* Apply subtle shadow to images inside header */
 header img{
-    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+   filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
-
+/* Hero area subtitle */
 .top h2{
-
-letter-spacing: 0px;
-font-size: 1.5em;
-position: absolute; 
-top: 55%;
-left: 55%;
-justify-content: center;
-font-weight: 500;
-letter-spacing: -1px;
+   font-size: 1.5em;
+   position: absolute;
+   top: 55%;
+   left: 55%;
+   font-weight: 500;
+   letter-spacing: -1px;
 }
 
-
-/* Menu */
-
+/*NAVIGATION MENU*/
 .menu ul{
-    display: flex;
-    align-items: center;    /* vertical centralize */
-    width: 100%;
-   
+   display: flex;          /* Align items horizontally */
+   align-items: center;    /* Center items vertically */
+   width: 100%;
 }
+
 .menu ul li {
-    list-style: none;
-        display: inline-block;
-    margin-left: 2%;
+   list-style: none;       /* Remove bullet points */
+   display: inline-block;
+   margin-left: 2%;
 }
 
+/* Menu links */
 .menu ul li a {
-    text-decoration: none;
-    color: black;
-    letter-spacing: -1px; 
-    
+   text-decoration: none;
+   color: black;
+   letter-spacing: -1px;
 }
 
+/* Menu bar container */
 .menu {
-    width: 100%;
-    position: fixed;
-    display: flex;    
-      overflow: auto;
-    background-color: #F2F2F2;  
-    z-index: 3;
-    height: 10vh;
-    padding: 0;
-      
-
+   width: 100%;
+   position: fixed;        /* Keeps menu visible when scrolling */
+   display: flex;
+   background-color: #F2F2F2;
+   z-index: 3;             /* Stay on top of other elements */
+   height: 10vh;
+   padding: 0;
 }
+
+/* Logo position and styling */
 .logo{
-    width: 18%;
-    
+   width: 18%;
 }
 
 .logo img{
-    margin-left: 15%;
-    width: 20%;
-    filter: none;
-
+   margin-left: 15%;
+   width: 20%;
+   filter: none;           /* Remove header shadow for logo */
 }
 
 .options{
-    text-align: right;
-width: 75%;    
+   text-align: right;
+   width: 75%;
 }
 
+/* Shadows for decorative flowers (global group styling) */
 .flower10,.flower9,.flower8,.flower7,.flower6,.flower11, .flower12{
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+   filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
-
+/* Hover effect for menu items */
 li:hover{
-    border-bottom: solid #900507 1px;
+   border-bottom: solid #900507 1px;
 }
 
-
-/* Main Gallery */
+/*PRODUCT GALLERY*/
 .gallery{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+   width: 100%;
+   display: flex;
+   justify-content: center;  /* Align center horizontally */
 }
 
-
+/* Images inside the gallery */
 .gallery figure img{
- width: 80%;
- background-color: #F2F2F2;
-padding:10%;
+   width: 80%;
+   background-color: #F2F2F2;
+   padding:10%;  /* Adds white space around the photo */
 }
 
+/* Polaroid frame around each item */
 .polaroidImage{
-    background-color: #740220;
-    color: #fff;
-    padding-top: 0.3em;
-    width: 24%;
+   background-color: #740220;
+   color: #fff;
+   padding-top: 0.3em;
+   width: 24%;
    margin: 2%;
    margin-top: 0%;
 }
 
-
+/* Page subtitles */
 .subtitle{
-    font-family: "Rouge Script", cursive;
-    font-weight: 100;
-    text-align: center;
-    font-size: 3em;
+   font-family: "Rouge Script", cursive;
+   font-weight: 100;
+   text-align: center;
+   font-size: 3em;
 }
 
+/* Caption under product images */
 .gallery figcaption{
-    text-align: center;
-    padding-top: 0.5em;
+   text-align: center;
+   padding-top: 0.5em;
 }
 
+/*ROTATION CLASSES FOR POLAROID IMAGES*/
 .rotate{
-    transform: rotate(2deg);
+    transform: rotate(2deg);  /* Slight clockwise rotation */
 }
 
 .rotateLeft{
-     transform: rotate(-2deg);
+     transform: rotate(-2deg); /* Slight counter-clockwise rotation */
 }
 
-
+/*DECORATIVE FLOWERS POSITIONING*/
 .flower6{
     width: 8em;
     position: absolute; 
-    top: 62em;
-    left: 87%; 
-    z-index: -1; 
+    top: 62em;        /* Vertical placement */
+    left: 87%;        /* Horizontal placement */
+    z-index: -1;      /* Behind main content */
     transform: rotate(20deg);
 }
 
@@ -231,18 +229,6 @@ padding:10%;
     transform: rotate(15deg);
 }
 
-/* Why buy a polaroid? */
-.why figure{
-    width: 100%;
-}
-
-.why figure img{
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-}
-
-
 .flower9{
     width: 9em;
     position: absolute; 
@@ -252,10 +238,40 @@ padding:10%;
     transform: rotate(40deg);
 }
 
-.side{
+.flower10{
+    width: 7em;
+    position: absolute; 
+    top: 85rem;
+    left: 42%;
+}
+
+/*WHY BUY A POLAROID? SECTION*/
+.why{
+    width: 100%;
     display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.why figure{
+    width: 100%; /* Full width for figure container */
+}
+
+.why figure img{
+    width: 100%;      /* Image fills the figure */
+    border-radius: 10px;
+    display: flex;
+}
+
+.side{
+    display: flex;    /* Horizontal layout for side-by-side content */
     width: 40%;
     justify-content: center;
+}
+
+.sideRight{
+    margin-top: auto;   
+    width: 40%;  
+    margin-bottom: auto;
 }
 
 .sideRight p{
@@ -263,60 +279,34 @@ padding:10%;
     display: flex;
 }
 
-.sideRight{
- margin-top: auto;   
- width: 40%;  
- margin-bottom: auto;
-}
-
 .sideRight a img{
-  width: 2rem;  
-  transform: rotate(180deg);
-  display: flex;
-
-  background-color: #0A515B;
-  padding-right: 1rem;
-  padding-left: 1rem;
-
-  border-radius: 20px;
+    width: 2rem;  
+    transform: rotate(180deg); /* Arrow pointing left */
+    display: flex;
+    background-color: #0A515B;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 20px;
 }
 
-
-.why{
+/*DETAILS SECTION / PRODUCT INFO*/
+.line{
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.flower10{
-     width: 7em;
-    position: absolute; 
-    top: 85rem;
-    left: 42%;
-}
-
-/* Details */
-
-
-
-.line{
-     width: 100%;
-    display: flex;
-    justify-content: center;
+    justify-content: center; /* Center all product details */
     padding-bottom: 2rem;
 }
 
-
-
 .flowerDivs{
-display: flex;
-width: 100%;
-margin-left: auto;
-text-align: left;
-margin-top: 1rem;
+    display: flex;       /* Align image + text side by side */
+    width: 100%;
+    margin-left: auto;
+    text-align: left;
+    margin-top: 1rem;
 }
+
 .flowerDivs img{
-    width: 15%;
+    width: 15%;          /* Small image icon */
     padding-right: 1rem;
     height: auto;
 }
@@ -324,14 +314,14 @@ margin-top: 1rem;
 .sideCamera{
     display: flex;
     width: 30%;
-    justify-content: center;
+    justify-content: center; /* Center camera image */
 }
 
 .sideCamera img{
-    width: 100%;
+    width: 100%;          /* Full width of container */
 }
 
-
+/*FOOTER STYLING*/
 footer{
     background-color: #025158;
     padding-top: 1rem;
@@ -341,18 +331,16 @@ footer{
     text-align: center;
 }
 
-/* About us Page */
-
+/*ABOUT US PAGE HEADER STYLING*/
 .topOther{
-background-color: #F2F2F2;
-height: 50vh;
-width: 100%;
-margin: 0;
-padding: 0;
-padding-top: 0;
-overflow: hidden;
-position: relative;
- z-index: 2;
+    background-color: #F2F2F2;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .topOther .flower{
@@ -362,20 +350,15 @@ position: relative;
     left: 75%;
     transform: rotate(-32deg);  
     z-index: 1;
-    
 }
 
- 
-.topOther  .flower3{
+.topOther .flower3{
     width: 15em;
     position: absolute; 
     top: 30%;
     left: 68%;
-    
     z-index: -1;
-    
 }
-
 
 .topOther .flower5{
     width: 22em;
@@ -383,15 +366,15 @@ position: relative;
     top: 10%;
     left: 80%;
     z-index: -1;
-} 
+}
 
 .titleAbout{
-font-family: "Rouge Script", cursive;
-font-size: 8em;
-font-weight: 500;
-top: 40%;   
-position: absolute;
-left:10%;
+    font-family: "Rouge Script", cursive;
+    font-size: 8em;
+    font-weight: 500;
+    top: 40%;   
+    position: absolute;
+    left: 10%;
 }
 
 
@@ -408,46 +391,97 @@ i{
     font-weight: bold;
 }
 
-/* About me */
-.aboutCreator{
-    width: 90%;
-    display: flex;
-   position: relative;
-    justify-content: center;
-    padding-bottom: 5rem;
+/*ABOUT US PAGE - FLOWERS AND HEADER*/
+.topOther .flower{
+    width: 18em; 
+    position: absolute; 
+    top: 60%;
+    left: 75%;
+    transform: rotate(-32deg);  
+    z-index: 1; /* In front of background */
 }
 
+.topOther .flower3{
+    width: 15em;
+    position: absolute; 
+    top: 30%;
+    left: 68%;
+    z-index: -1; /* Behind main content */
+}
+
+.topOther .flower5{
+    width: 22em;
+    position: absolute; 
+    top: 10%;
+    left: 80%;
+    z-index: -1; /* Behind main content */
+}
+
+/* Header title for About page */
+.titleAbout{
+    font-family: "Rouge Script", cursive;
+    font-size: 8em;
+    font-weight: 500;
+    top: 40%;   
+    position: absolute;
+    left: 10%;
+}
+
+/*COMPANY SECTION*/
+.company{
+    padding-top: 5rem; /* Space from top */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;         /* Center content */
+}
+
+/* Italic text styling */
+i{
+    font-weight: bold;
+}
+
+/*ABOUT CREATOR SECTION*/
+.aboutCreator{
+    width: 90%;
+    display: flex;         /* Align image and text side by side */
+    position: relative;
+    justify-content: center;
+    padding-bottom: 5rem;  /* Space below section */
+}
+
+/* Creator image container */
 .imgCreator{
     width: 40%;
     display: flex;
-    justify-content: right;
+    justify-content: right; 
     padding-right: 5rem;
 }
 
 .imgCreator img{
-    width: 50%;
-
+    width: 50%;           /* Smaller image inside container */
 }
 
+/* Text content about creator */
 .textCreator{
     width: 35%;
 }
 
 .textCreator a{
     text-decoration: none;
-    color: #740220;
+    color: #740220;       /* Polaroid theme color */
 }
 
-
+/* Decorative flower in About section */
 .flower11{
     width: 5em;
     position: absolute; 
     top: 34rem;
-    z-index: -1;
+    z-index: -1;          /* Behind content */
     left: 25%;
     transform: rotate(-30deg);  
 }
 
+/* Company image styling */
 .imgCompany img{
     width: 90%;
 }
@@ -459,45 +493,43 @@ i{
     padding-right: 5rem;
 }
 
-
-/* Feedback */
+/*FEEDBACK / OPINIONS SECTION*/
 .opnions{
     width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 2rem; 
-    
 }
 
+/* Previous / Next buttons */
 .btnBack button{
-border: none;
-width: 20%;
-justify-content: center;
-background-color: transparent;
-
-
+    border: none;
+    width: 20%;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .btnBack{
     width: 12%;
-   display: flex;
-justify-content: center;
-background-color: transparent;
-
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .btnBack img{
     width: 100%;
-    
 }
+
+/* Rotate button for next */
 .btnRotate{
     transform: rotate(180deg);
 }
+
+/* Stars rating line */
 .starsLine {
     display: flex;
-    gap: 0.2rem; /* space between stars */
+    gap: 0.2rem; /* Space between stars */
     justify-content: center;
-    
 }
 
 .starsLine img {
@@ -505,52 +537,50 @@ background-color: transparent;
     height: auto;
 }
 
-
 .space{
     margin-top: 5rem;
 }
 
+/* Text container for each opinion */
 .textAvaliation{
     width: 40%;
-    background-color: #efefef;
+    background-color: #fff;
     text-align: center;
     border: solid 1px #025158;
     display: block;
     padding: 1.2%;
-    background-color: #fff;    
     border-radius: 20px;
 }
 
+/* Make buttons show pointer on hover */
 button {
     cursor: pointer;
 }
 
-
-/* Form  */
-
+/*FORM STYLING*/
 .form{
     text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-
 }
 
+/* Fieldset container */
 .form fieldset{
     border-radius: 10px;
     width: 45%;
     border: 1px solid #025158;
     padding-bottom: 2rem;
-    
 }
 
+/* Labels for form fields */
 .labelPolaroid{
     font-size: 15px;
     padding-bottom: 2rem;
-
 }
 
+/* Inputs style */
 .inputs{
     width: 70%;
     margin-left: 1rem;
@@ -560,11 +590,13 @@ button {
     border: solid 1px;
 }
 
+/* Radio buttons */
 .optionTitle{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
+/* Comments section */
 .comment{
     display: flex;
 }
@@ -582,7 +614,6 @@ button {
 }
 
 .labelType{
-
     padding-left: 5%;
     padding-top: 1rem;
     width: 20%;
@@ -593,7 +624,6 @@ button {
     display: flex;
     width: 70%;
     justify-content: left;
-
 }
 
 .divType{
@@ -601,8 +631,8 @@ button {
     align-items: center;
     width: 30%;
     height: 4rem;
-
 }
+
 .divType label{
     justify-content: left;
     display: flex;
@@ -618,7 +648,7 @@ button {
 }
 
 .divType3{
-      display: flex;
+    display: flex;
     align-items: center;
     width: 13%;
     height: 4rem;  
@@ -627,9 +657,10 @@ button {
 .textArea{
     border-radius: 10px;
     width: 62%;
-    resize: none;
+    resize: none; /* Disable resizing */
 }
 
+/* Form submit button */
 .btnForm img{
     transform: rotate(180deg);    
     border: none;
@@ -647,10 +678,75 @@ button {
     margin-bottom: -3rem;
 }
 
+/* Decorative flower behind form */
 .flower12{
     width: 7em;
     position: absolute; 
     top: 33rem;
     left: 28%;
     z-index: -1;
+}
+
+/*SUPPORT PAGE - DETAILS ELEMENT*/
+.supportDiv{
+    width: 100%;
+}
+
+/* Details box */
+details {
+  width: 50%;  
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+/* Summary header */
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* Camera emoji for closed details */
+summary::after {
+  content: '📷';
+}
+
+/* Open details */
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary::after {
+  content: '📸'; /* Camera with flash */
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
+
+/* Decorative flower support page */
+.flower13{
+    width: 7em;
+    position: absolute; 
+    top: 24rem;
+    left: 20%;
+    z-index: 1;
+    transform: rotate(-10deg);
+}
+
+.flower14{
+    width: 5em;
+    position: absolute; 
+    top: 45rem;
+    left: 75%;
+    z-index: -1;
+    transform: rotate(10deg);
 }
