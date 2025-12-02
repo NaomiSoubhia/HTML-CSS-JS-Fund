@@ -29,3 +29,23 @@ document.querySelectorAll(".btnBack button")[1].addEventListener("click", () => 
 
 // Load initial text
 updateReview();
+
+
+
+//Video function pop up
+//https://www.google.com/search?q=open+a+small+popup+window+in+html&oq=open+a+smalll+window+&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQg3MDQ0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
+function openSmallPopup() {
+    // size pop up
+    const width = 900;
+    const height = 400;
+
+    // Calculate to centralize
+    const left = (window.screen.width / 2) - (width / 2);
+    const top = (window.screen.height / 2) - (height / 2);
+
+    // Window configuration
+    const windowFeatures = `width=${width},height=${height},resizable=yes,scrollbars=yes,top=${top},left=${left}`;
+
+    // Open popup
+    window.open("popup.html", "SmallPopup", windowFeatures);
+}
